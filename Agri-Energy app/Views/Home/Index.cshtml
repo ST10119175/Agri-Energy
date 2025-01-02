@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <header class="mb-4">
+        <h1 class="display-4">Welcome to Agri-Energy Connect platform!</h1>
+        <p>Buy and sell a variety of any farmming products.</p>
+    </header>
+
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <input type="text" class="form-control" placeholder="Search for products...">
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-primary">Search</button>
+        </div>
+    </div>
+
+    <nav class="mb-4">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">All Categories</a>
+
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Products1" asp-action="Index">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Farmers" asp-action="Index">Farmers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Products1" asp-action="Searchform">Search</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">A short description of the product.</p>
+                    <a href="#" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mb-4">
+        <a href="#" class="btn btn-lg btn-outline-primary">Sell Your Products Now!</a>
+    </div>
+</div>
